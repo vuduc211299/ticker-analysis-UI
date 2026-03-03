@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { User, Settings } from "lucide-react";
+import { Settings } from "lucide-react";
+import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({
@@ -9,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "STOCKAI",
+  title: "TickerAnalyzer",
   description: "Minimalist dark mode stock analyzer",
 };
 
@@ -28,21 +29,21 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center gap-8">
               <div className="font-bold text-xl tracking-tight flex items-center gap-1 text-white">
-                STOCK<span className="text-emerald-500">AI</span>
+                Ticker<span className="text-emerald-500">Analyzer</span>
               </div>
               <nav className="hidden md:flex gap-6 text-sm font-medium text-zinc-300">
-                <a href="#" className="hover:text-white transition-colors">
+                <Link href="#" className="hover:text-white transition-colors">
                   Market
-                </a>
-                <a href="#" className="hover:text-white transition-colors">
+                </Link>
+                <Link href="#" className="hover:text-white transition-colors">
                   Analytics
-                </a>
-                <a href="#" className="hover:text-white transition-colors">
+                </Link>
+                <Link href="#" className="hover:text-white transition-colors">
                   Portfolio
-                </a>
-                <a href="#" className="hover:text-white transition-colors">
+                </Link>
+                <Link href="#" className="hover:text-white transition-colors">
                   Learn
-                </a>
+                </Link>
               </nav>
             </div>
             <div className="flex items-center gap-4">
