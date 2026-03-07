@@ -189,7 +189,7 @@ export default function Home() {
             <div className="mb-6 h-10 w-48 bg-white/5 rounded-xl animate-pulse" />
           )}
 
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_460px] xl:grid-cols-[1fr_500px] gap-8">
             <PriceChart
               chartLoading={chartLoading}
               chartPoints={chartPoints}

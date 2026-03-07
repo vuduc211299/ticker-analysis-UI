@@ -31,7 +31,7 @@ export function PriceChart({
   isPositive,
 }: PriceChartProps) {
   return (
-    <div className="flex flex-col min-h-[440px] relative rounded-3xl bg-[#0e0e0e] border border-white/5 p-6 shadow-2xl">
+    <div className="flex flex-col h-[440px] w-full min-w-0 relative rounded-3xl bg-[#0e0e0e] border border-white/5 p-6 shadow-2xl shrink-0">
       <div className="flex flex-wrap justify-between items-center mb-6 gap-3">
         <h3 className="text-base font-semibold text-zinc-200">Price Chart</h3>
         {seriesKeys.length > 1 && (
